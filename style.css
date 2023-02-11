@@ -1,0 +1,102 @@
+@import url('https://fonts.cdnfonts.com/css/georgia');
+
+:root{
+    --body-fg: #F1F6F3;
+    --body-bg: #353740;
+}
+
+body{
+    font-family:'Georgia', sans-serif;
+    text-align: center;
+    background-color: var(--body-bg);
+    color: var(--body-fg);
+}
+
+.modal{
+    --bs-modal-margin: 1.55rem;
+}
+
+.modal-content{
+    background-color: var(--body-fg);
+}
+
+.modal-content p,h5{
+    text-align: left;
+    color: var(--body-bg);
+}
+
+#board{
+    width: 350px;
+    height: 370px;
+    margin: auto;
+    margin-top: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tile{
+    /* Box Style */
+    border: 1px solid #CECACD;
+    width: 54px;
+    height: 54px;
+    margin: 2.5px;
+    border-radius: 4px;
+
+    /* Text Style */
+    color: var(--body-fg);
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.correct, .present, .absent{
+    color: var(--body-fg);
+    border-color: var(--body-fg);
+}
+
+.correct{
+    background-color: #538d4e;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%233a6236' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+.present{
+    background-color: #c9b458;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%238c7d3d' fill-opacity='0.83' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.absent{
+    background-color: #999999;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%235b5b5b' fill-opacity='0.83' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.keyboard-row{
+    width: 400px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.key-tile, .enter-key-tile{
+    /* Box Style */
+    border: 1px solid #CECACD;
+    width: 36px;
+    height: 36px;
+    margin: 2px;
+    border-radius: 4px;
+
+    /* Text Style */
+    color: var(--body-fg);
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enter-key-tile{
+    width: 76px;
+}
+
+#KeyA{
+    margin-left: 21px;
+}
