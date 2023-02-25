@@ -214,6 +214,7 @@ function update() {
         }
         if (correct == letterCounter) {
             success();
+            gameOver = true;
         }
     }
     for (let c = 0; c < letterCounter; c++) {
